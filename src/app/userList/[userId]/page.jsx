@@ -11,3 +11,10 @@ const page = ({ params }) => {
 };
 
 export default page;
+
+export function generateMetadata() {
+  return {
+    title: "Welcome to hablu programmer's website",
+    description: "This is hablu programmer's website",
+  };
+}
