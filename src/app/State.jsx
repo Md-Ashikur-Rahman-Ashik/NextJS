@@ -8,7 +8,7 @@ const State = () => {
   };
 
   return (
-    <div className="mt-2">
+    <div className="mt-2 min-h-screen flex justify-center items-center">
       {/* <h2 className="text-center font-bold text-5xl">
         This is state component from State.jsx
       </h2> */}
