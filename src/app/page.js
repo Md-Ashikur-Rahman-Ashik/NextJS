@@ -1,8 +1,11 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import State from "./State";
 
 export default function Home() {
+  const router = useRouter();
+
   // const fun = () => {
   //   alert("As Salamu Alaikum");
   // };
@@ -19,6 +22,15 @@ export default function Home() {
         </button>
       </div> */}
       <State></State>
+      <div className="flex justify-center mt-10 font-bold">
+        <button
+          type="button"
+          className="bg-black text-white p-2 rounded-xl"
+          onClick={() => router.push("/userList")}
+        >
+          User List Page
+        </button>
+      </div>
     </main>
   );
 }
